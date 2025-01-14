@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Введите данные</h1>
+    <form method="POST">
+        {% csrf_token %}
+        Имя: <input type="text" name="name"><br>
+        Сообщение: <textarea name="text"></textarea><br>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

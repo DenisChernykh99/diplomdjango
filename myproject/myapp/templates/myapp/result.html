@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Список сообщений</h1>
+    <ul>
+        {% for message in messages %}
+            <li><strong>{{ message.name }}</strong>: {{ message.text }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Назад</a>
+</body>
+</html>
